@@ -1,0 +1,3 @@
+source http://api.nuget.org/v3/index.json
+
+nuget FSharpx.Collections
