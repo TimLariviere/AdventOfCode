@@ -67,8 +67,3 @@ System.IO.File.ReadLines "2018/Day 4/data.txt"
 |> Seq.sortByDescending (fun (g, m, t) -> t)
 |> Seq.map (fun (g, m, t) -> g * m)
 |> Seq.head
-
-[|(6, 26); (12, 55); (15, 37)|]
-|> Array.map (fun (start, stop) -> Array.init (stop - start) (fun i -> start + i))
-|> Array.concat
-|> Array.countBy (fun m -> m)
